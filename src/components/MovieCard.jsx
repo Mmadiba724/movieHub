@@ -1,4 +1,5 @@
 import React from 'react'
+import starIcon from '../assets/Rating.svg'
 
 const MovieCard = ({movie:{title, vote_average, poster_path,original_language,release_date}}) => {
 	return (
@@ -9,7 +10,7 @@ const MovieCard = ({movie:{title, vote_average, poster_path,original_language,re
 				<h3 className="">{title}</h3>
 				<div className="content">
 					<div className="rating">
-						<img src={'src/assets/rating.svg'} alt={`rating-icon`} />
+						<img src={starIcon} alt={`rating-icon`} />
 						<p>{vote_average ? vote_average.toFixed(1): 'N/A'}</p>
 					</div>
 					<span>•</span>
